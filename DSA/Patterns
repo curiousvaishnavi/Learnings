@@ -221,9 +221,9 @@ int main(){
     int row=1;
     while(row<=n){
         int col=1;
-        char ch='A'+row-1;
+        char ch='A'+row-1;        //ch=('A'+row+col-2)
         while(col<=row){
-            cout<<ch<<" ";
+            cout<<ch<<" ";         
             ch=ch+1;
             col=col+1;
             
@@ -233,6 +233,39 @@ int main(){
         row=row+1;
     }
 }
+
+
+#pattern 9
+
+D
+C D
+B C D
+A B C D
+
+#include<iostream>
+using namespace std;
+
+int main(){
+
+    int n;
+    cout<<"Enter the no. of rows"<<endl;
+    cin>>n;
+
+    int row=1;
+    while(row<=n){
+        int col=1;
+        char ch=('A'+n-row);        //'A'+n-row   then increment
+        while(col<=row){
+            cout<<ch<<" ";
+            ch=ch+1;
+            col=col+1;
+        }
+        cout<<endl;
+        row=row+1;
+    }
+}
+
+
 
 
 
