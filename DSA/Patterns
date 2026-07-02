@@ -298,3 +298,46 @@ int main(){
         row=row+1;
     }
 }
+
+
+#pattern 11
+
+   1
+  121
+ 12321
+1234321
+
+#include <iostream>
+using namespace std;
+
+int main(){
+
+    int n;
+    cout<<"Enter the no.of rows"<<endl;
+    cin>>n;
+
+
+    int row=1;
+    while(row<=n){
+        int space=n-row;        //To print the spaces(1st triangle)
+        while(space){
+            cout<<" ";
+            space=space-1;
+        }
+        int col=1;              //To print 2nd triangle
+        while(col<=row){
+            cout<<col;
+            col=col+1;
+        }
+        int start=row-1;        //To print 3rd triangle
+        while(start){
+            cout<<start;
+            start=start-1;
+        }
+        cout<<endl;
+        row=row+1;
+    }
+}
+
+
+
