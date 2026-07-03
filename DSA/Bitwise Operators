@@ -26,3 +26,30 @@ a | b = 6
 ~a = -5
 a ^ b = 2
 
+
+
+
+//#1 Sum of 1 to N no.
+
+#include<iostream>
+using namespace std;
+
+int main(){
+
+    int n;
+    cout<<"Enter the n"<<endl;
+    cin>>n;
+
+    int sum=0;
+    for(int i=1;i<=n;i++){
+        sum+=i;
+    }
+
+    cout<<"Sum of the no.s is "<<sum<<endl;
+}
+
+/*Output:
+
+Enter the n
+5
+Sum of the no.s is 15*/
