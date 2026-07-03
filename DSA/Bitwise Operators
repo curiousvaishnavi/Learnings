@@ -87,3 +87,35 @@ int main(){
 Enter the value of n
 10
 0 1 1 2 3 5 8 13 21 34 55 89 */
+
+
+#3 Number is prime or not
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int n;
+    cout<<"Enter the value of n"<<endl;
+    cin>>n;
+
+    // int a=1;
+    // int b=n;
+
+    for(int i=2;i<=(n-1);i++){       
+        if(n%i!=0){                            //n%i!=0     ---->No. is prime
+            cout<<"prime no.";
+            break;
+        }
+        else{
+            cout<<"Not prime";                 //n%i==0     ---->No. is not prime
+            break;
+        }
+    }
+}
+
+/*output:
+
+Enter the value of n
+7
+prime no. */
