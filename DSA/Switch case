@@ -1,0 +1,85 @@
+#1.Calculator
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int a,b;
+    cout<<"Enter the value of a"<<endl;
+    cin>>a;
+    cout<<"Enter the value of b"<<endl;
+    cin>>b;
+    char op;
+    cout<<"Enter the operation you want to perform"<<endl;
+    cin>>op;
+
+    switch(op){
+        case '+' :  cout<<a+b<<endl; 
+                    break;
+        case '-' :  cout<<a-b<<endl; 
+                    break;
+        case '*' :  cout<<a*b<<endl; 
+                    break;
+        case '/' :  cout<<a/b<<endl; 
+                    break;
+        case '%' :  cout<<a%b<<endl; 
+                    break;
+        default  : cout<<"Enter a valid operation";
+    }
+}
+
+Output:
+
+Enter the value of a
+3
+Enter the value of b
+5
+Enter the operation you want to perform
+*
+15
+
+
+#2.Calcuating the required notes
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  int amount;
+  cout<<"Enter the amount"<<endl;
+  cin>>amount;
+  int Rs100 , Rs50 , Rs20 , Rs1;
+
+switch(1)
+  {
+      case 1: Rs100=amount/100;
+              amount=amount%100;
+              cout<<"No of 100 Rupee notes required are="<<Rs100<<endl;
+              
+         
+      case 2: Rs50=amount/50;
+              amount=amount%50;
+              cout<<"No of 50 Rupee notes required are="<<Rs50<<endl;
+              
+
+      case 3: Rs20=amount/20;
+              amount=amount%20;
+              cout<<"No of 20 Rupee notes required are="<<Rs20<<endl;
+               
+
+      case 4: Rs1=amount/1;
+              amount=amount%1;
+              cout<<"No of 1 Rupee notes required are="<<Rs1<<endl; 
+                  
+           }
+}
+
+/*Output:
+
+Enter the amount
+1330
+No of 100 Rupee notes required are=13
+No of 50 Rupee notes required are=0
+No of 20 Rupee notes required are=1
+No of 1 Rupee notes required are=10/*
