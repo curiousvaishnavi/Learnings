@@ -60,3 +60,43 @@ int main(){
 Enter the number
 44
 Number is Even*/
+
+
+
+#3.nCr program
+
+#include<iostream>
+using namespace std;
+
+int factorial(int num){
+    int fact=1;
+    for(int i=1;i<=num;i++){
+        fact=fact*i;
+    }
+    return fact;
+}
+
+
+int nCr(int a,int b){
+    int num=factorial(a);
+    int deno=factorial(b)*factorial(a-b);
+    return num/deno;
+}
+
+
+
+int main(){
+    int n,r;
+    cout<<"Enter the value of n & r"<<endl;
+    cin>>n>>r;
+
+    cout<<"Answer is "<<nCr(n,r);
+
+}
+
+/*Output:
+
+Enter the value of n & r
+8
+2
+Answer is 28*/
