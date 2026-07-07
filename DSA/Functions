@@ -100,3 +100,30 @@ Enter the value of n & r
 8
 2
 Answer is 28*/
+
+
+#3.Print the number 1 to n
+
+#include<iostream>
+using namespace std;
+
+void print(int n){
+    for(int i=1;i<=n;i++){
+        cout<<i<<" ";
+    }
+}
+
+int main(){
+    int n;
+    cout<<"Enter the value of n"<<endl;
+    cin>>n;
+
+   print(n);
+
+}
+
+/*Output:
+
+Enter the value of n
+5
+1 2 3 4 5*/
