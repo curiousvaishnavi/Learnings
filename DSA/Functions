@@ -192,3 +192,36 @@ Enter a and b
 11
 7
 No.of set bit is 6*/
+
+
+#6.Nth fibonacci value finder
+
+#include<iostream>
+using namespace std;
+
+int nFibonacci(int n){
+    int a=0;
+    int b=1;
+    int sum=0;
+    for(int i=3;i<=n;i++){
+        sum=a+b;
+        a=b;
+        b=sum;
+    }
+    return sum;
+}
+
+int main(){
+    int n;
+    cout<<"Enter the value of n"<<endl;
+    cin>>n;
+    
+    cout<<"You're nth fibonacci term's value is "<<nFibonacci(n);
+    
+}
+
+/*Output:
+
+Enter the value of n
+9
+You're nth fibonacci term's value is 21
