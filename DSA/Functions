@@ -127,3 +127,29 @@ int main(){
 Enter the value of n
 5
 1 2 3 4 5*/
+
+
+#4.Arithmetic progression
+
+#include<iostream>
+using namespace std;
+
+int isAP(int n){
+    int ans=(3*n+7);
+    return ans;
+}
+
+int main(){
+    int n;
+    cout<<"Enter the value of n"<<endl;
+    cin>>n;
+
+   cout<<"Nth term is "<<isAP(n);
+
+}
+
+/*Output:
+
+Enter the value of n
+3
+Nth term is 16*/
