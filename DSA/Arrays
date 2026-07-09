@@ -51,3 +51,41 @@ Enter the size of the array
 3
 Maximum value is 7
 Minimum value is 3*/
+
+
+#2.Sum of all elements in an array
+
+#include<iostream>
+using namespace std;
+
+int printSum(int num[],int n){
+    int sum=0;
+    for(int i=0;i<n;i++){
+        sum=sum+num[i];
+    }
+    return sum;
+}
+
+int main(){
+
+    int size;
+    cout<<"Enter the size of an array"<<endl;
+    cin>>size;
+
+    int num[100];
+    for(int i=0;i<size;i++){
+        cin>>num[i];
+    }
+    cout<<"Sum of all elements in an array is "<<printSum(num,size);
+}
+
+/*Output:
+
+Enter the size of an array
+5
+2
+7
+1
+-4
+11
+Sum of all elements in an array is 17*/
