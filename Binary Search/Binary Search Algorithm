@@ -4,8 +4,16 @@ using namespace std;
 //Binary Search is apply only on Monotonic functions
 int binSearch(int arr[],int size,int key){
 	int start=0;
-	int end=size-1;
+	int end=size-1;	
+
+/*  It leads to int_overflow condition
+
 	int mid=(start+end)/2;
+
+*/
+
+	//To avoid int_overflow condition (optimized version of middle element finding)
+	int mid= start + (end-start)/2;
 
 	//Terminating condition
 	while(start<=end){
@@ -17,16 +25,18 @@ int binSearch(int arr[],int size,int key){
 		//To search in right side
 		if(key > arr[mid]){
 			start=mid+1;
-
+		}
 		//To search in left side
-		}else{
+		else{
 			end=mid-1;
 		}
 
-		mid=(start+end)/2;
+		mid= start + (end-start)/2;
 
 	}
+
 	return -1;
+
 }
 
 int main(){
