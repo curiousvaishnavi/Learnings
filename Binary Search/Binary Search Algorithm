@@ -1,23 +1,30 @@
 #include<iostream>
 using namespace std;
 
+//Binary Search is apply only on Monotonic functions
 int binSearch(int arr[],int size,int key){
 	int start=0;
 	int end=size-1;
-	
 	int mid=(start+end)/2;
 
+	//Terminating condition
 	while(start<=end){
+
 		if(arr[mid]==key){
 		return mid;
 		}
+
+		//To search in right side
 		if(key > arr[mid]){
 			start=mid+1;
 
+		//To search in left side
 		}else{
 			end=mid-1;
 		}
+
 		mid=(start+end)/2;
+
 	}
 	return -1;
 }
